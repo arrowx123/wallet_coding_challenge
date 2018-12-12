@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.guofan.wallet.TestWallet" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-12-12T03:10:53" hostname="MTL-GuofanYin" time="0.043">
+  <properties/>
+  <testcase name="TestTransferException" classname="com.guofan.wallet.TestWallet" time="0.039"/>
+  <testcase name="TestWithdrawException" classname="com.guofan.wallet.TestWallet" time="0.001"/>
+  <testcase name="TestDepositSucceed" classname="com.guofan.wallet.TestWallet" time="0.0"/>
+  <testcase name="TestAccountExistFail" classname="com.guofan.wallet.TestWallet" time="0.0"/>
+  <testcase name="TestTransferSucceed" classname="com.guofan.wallet.TestWallet" time="0.0"/>
+  <testcase name="TestAccountExistSucceed" classname="com.guofan.wallet.TestWallet" time="0.0"/>
+  <testcase name="TestWithdrawFail" classname="com.guofan.wallet.TestWallet" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
