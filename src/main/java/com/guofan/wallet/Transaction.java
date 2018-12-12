@@ -8,11 +8,23 @@ public class Transaction {
     private Timestamp timestamp;
     private double balance;
 
-    public Transaction(double balance){
+    public Transaction(double balance) {
 
         ID = UUID.randomUUID();
         timestamp = new Timestamp(System.currentTimeMillis());
         this.balance = balance;
 
+    }
+
+    public Timestamp getTimestamp() {
+        return timestamp;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public String toString(){
+        return ("Transaction " + ID + " happened at " + timestamp + ", with balance " + balance + ".");
     }
 }

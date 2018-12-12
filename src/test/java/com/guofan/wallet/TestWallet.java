@@ -2,13 +2,13 @@ package com.guofan.wallet;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
+
 import static org.assertj.core.api.Assertions.*;
 
 
 public class TestWallet {
     @Test
-    public void TestAccountExistSucceed() throws Exception{
+    public void TestAccountExistSucceed() throws Exception {
         Wallet wallet = new Wallet();
         Account account = wallet.ListAccounts().get(0);
 
@@ -16,8 +16,9 @@ public class TestWallet {
         boolean expected = true;
         Assert.assertEquals(actual, expected);
     }
+
     @Test
-    public void TestAccountExistFail() throws Exception{
+    public void TestAccountExistFail() throws Exception {
         Wallet wallet = new Wallet();
         Account anotherAccount = new Account();
 
@@ -25,8 +26,9 @@ public class TestWallet {
         boolean expected = false;
         Assert.assertEquals(actual, expected);
     }
+
     @Test
-    public void TestWithdrawFail() throws Exception{
+    public void TestWithdrawFail() throws Exception {
         Wallet wallet = new Wallet();
         Account account = wallet.ListAccounts().get(0);
         double amount = 10;
@@ -35,8 +37,9 @@ public class TestWallet {
         boolean expected = false;
         Assert.assertEquals(actual, expected);
     }
+
     @Test
-    public void TestDepositSucceed() throws Exception{
+    public void TestDepositSucceed() throws Exception {
         Wallet wallet = new Wallet();
         Account account = wallet.ListAccounts().get(0);
         double amount = 10;
@@ -47,7 +50,7 @@ public class TestWallet {
     }
 
     @Test
-    public void TestWithdrawException() throws Exception{
+    public void TestWithdrawException() throws Exception {
         Wallet wallet = new Wallet();
         Account anotherAccount = new Account();
         double amount = 10;
@@ -57,7 +60,7 @@ public class TestWallet {
     }
 
     @Test
-    public void TestTransferSucceed() throws Exception{
+    public void TestTransferSucceed() throws Exception {
         Wallet wallet = new Wallet();
         Account account1 = wallet.ListAccounts().get(0);
         Account account2 = wallet.CreateNewAccount();
@@ -70,7 +73,7 @@ public class TestWallet {
     }
 
     @Test
-    public void TestTransferException() throws Exception{
+    public void TestTransferException() throws Exception {
         Wallet wallet = new Wallet();
         Account account1 = wallet.ListAccounts().get(0);
         Account account2 = new Account();
@@ -81,4 +84,5 @@ public class TestWallet {
         assertThatThrownBy(() -> wallet.Transfer(account1, account2, amount))
                 .isInstanceOf(AccountNotExistException.class);
     }
+
 }
