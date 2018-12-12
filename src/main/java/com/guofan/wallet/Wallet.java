@@ -70,7 +70,7 @@ public class Wallet {
         return false;
     }
 
-    public ArrayList<Transaction> ReturnTransactions(Account account) throws AccountNotExistException{
+    public ArrayList<Transaction> ReturnTransactions(Account account) throws AccountNotExistException {
         if (!AccountExist(account))
             throw new AccountNotExistException(account + " does not exist");
         return account.GetTransactions();

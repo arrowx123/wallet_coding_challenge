@@ -24,7 +24,7 @@ public class Transaction {
         return balance;
     }
 
-    public String toString(){
+    public String toString() {
         return ("Transaction " + ID + " happened at " + timestamp + ", with balance " + balance + ".");
     }
 }

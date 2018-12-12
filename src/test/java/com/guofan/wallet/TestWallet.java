@@ -56,7 +56,7 @@ public class TestWallet {
         double amount = 10;
 
         assertThatThrownBy(() -> wallet.Withdraw(anotherAccount, amount))
-                .isInstanceOf(AccountNotExistException.class);
+            .isInstanceOf(AccountNotExistException.class);
     }
 
     @Test
@@ -82,7 +82,7 @@ public class TestWallet {
         wallet.Deposit(account1, amount);
 
         assertThatThrownBy(() -> wallet.Transfer(account1, account2, amount))
-                .isInstanceOf(AccountNotExistException.class);
+            .isInstanceOf(AccountNotExistException.class);
     }
 
 }

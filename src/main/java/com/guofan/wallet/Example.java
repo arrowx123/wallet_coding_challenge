@@ -56,7 +56,7 @@ public class Example {
         wallet.Deposit(account, amountToDeposit);
         System.out.println("Deposit " + amountToDeposit + " into " + account + ".");
         System.out.println(
-                "The " + account + " account balance is: " + wallet.GetBalance(account) + ".\n"
+            "The " + account + " account balance is: " + wallet.GetBalance(account) + ".\n"
         );
 
 //      Withdraw money from the account.
@@ -64,7 +64,7 @@ public class Example {
         wallet.Withdraw(account, amountToWithdraw);
         System.out.println("Withdraw " + amountToDeposit + " from " + account + " .");
         System.out.println(
-                "The " + account + " account balance is: " + wallet.GetBalance(account) + ".\n"
+            "The " + account + " account balance is: " + wallet.GetBalance(account) + ".\n"
         );
 
 //      Create another account within the same wallet
@@ -74,20 +74,20 @@ public class Example {
 
 //      Transfer money from one account to another.
         System.out.println(
-                "Transfer " + amountToDeposit + " from " + anotherAccount + " to " + account + "."
+            "Transfer " + amountToDeposit + " from " + anotherAccount + " to " + account + "."
         );
         System.out.println(
-                "The " + anotherAccount + " account balance is: " + wallet.GetBalance(anotherAccount) + "."
+            "The " + anotherAccount + " account balance is: " + wallet.GetBalance(anotherAccount) + "."
         );
         System.out.println(
-                "The " + account + " account balance is: " + wallet.GetBalance(account) + "."
+            "The " + account + " account balance is: " + wallet.GetBalance(account) + "."
         );
         wallet.Transfer(anotherAccount, account, amountToDeposit);
         System.out.println(
-                "The " + anotherAccount + " account balance is: " + wallet.GetBalance(anotherAccount) + "."
+            "The " + anotherAccount + " account balance is: " + wallet.GetBalance(anotherAccount) + "."
         );
         System.out.println(
-                "The " + account + " account balance is: " + wallet.GetBalance(account) + ".\n"
+            "The " + account + " account balance is: " + wallet.GetBalance(account) + ".\n"
         );
 
 //      Retrieve transactions.
